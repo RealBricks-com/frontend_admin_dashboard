@@ -1,7 +1,7 @@
 // API client for Spring Boot backend
 import { toast } from "@/hooks/use-toast";
 
-const API_BASE_URL = "http://localhost:8081";
+const API_BASE_URL = import.meta.env.VITE_API_URL;
 
 class ApiClient {
   private baseURL: string;
